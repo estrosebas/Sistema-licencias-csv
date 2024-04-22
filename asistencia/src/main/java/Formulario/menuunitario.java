@@ -7,7 +7,7 @@ package Formulario;
 import java.awt.Color;
 import javax.swing.JOptionPane;
 import Entidad.*;
-import Datos.*;
+//import Datos.*;
 import java.util.List;
 import javax.swing.table.DefaultTableModel;
 import java.awt.Image;
@@ -38,7 +38,7 @@ public class menuunitario extends javax.swing.JFrame {
         setTitle("Sistema matriculas");
         setearconexiontexto();
         obteneradmin();
-        consultaralumnos();
+        //consultaralumnos();
         
     }
 
@@ -61,11 +61,11 @@ public class menuunitario extends javax.swing.JFrame {
         try (BufferedReader br = new BufferedReader(new FileReader(ARCHIVO_SESION))) {
             String idadmini = br.readLine();
             int codeadmini = Integer.parseInt(idadmini);
-            LoginDAO dao = new LoginDAO();
-            
-            Login logI = dao.devolverNombre(codeadmini);
-            usertesxt.setText("User : " + logI.getNombre());
-            jLabel14.setText("Bienvenido: " + logI.getNombre());
+            //LoginDAO dao = new LoginDAO();
+            //Login logI = dao.devolverNombre(codeadmini);
+            String Usuario = "Administrador";
+            usertesxt.setText("User : " + Usuario);
+            jLabel14.setText("Bienvenido: " + Usuario);
         } catch (IOException e) {
             e.printStackTrace(); // Manejo adecuado de excepciones
             return; //Retorna null si no se puede leer el archivo
@@ -574,7 +574,7 @@ public class menuunitario extends javax.swing.JFrame {
 
         //
         try {
-            consultaralumnos();
+            //consultaralumnos();
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -647,7 +647,7 @@ public class menuunitario extends javax.swing.JFrame {
         });
     }
 
-    void consultaralumnos() {
+    /*void consultaralumnos() {
         // Crear una instancia de AlumnoDAO
         AlumnoDAO alumnoDAO = new AlumnoDAO();
 
@@ -674,7 +674,8 @@ public class menuunitario extends javax.swing.JFrame {
 
         Tabla.setModel(modeloAlumnos);
     }
-    void consultarasistencia() {
+    */
+    /*void consultarasistencia() {
         AsistenciaDAO asistenciaDAO = new AsistenciaDAO();
 
         // Obtener la lista de todas las habilidades
@@ -699,7 +700,7 @@ public class menuunitario extends javax.swing.JFrame {
     }
 
         asistenciatabla.setModel(modelo);
-    }
+    }*/
     
   
     // Variables declaration - do not modify//GEN-BEGIN:variables

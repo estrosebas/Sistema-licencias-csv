@@ -6,7 +6,7 @@ package com.develop.licencias;
 
 import Formulario.*;
 
-import Datos.*;
+//import Datos.*;
 import Entidad.*;
 import java.sql.Date;
 import javax.swing.JOptionPane;
@@ -19,16 +19,16 @@ import javax.swing.SwingUtilities;
 public class Main {
 
     public static void main(String[] args) {
-        conexiones conec = new conexiones();
-        String elec =conec.leerOpcionConexionDesdeArchivo();
-        System.out.println(elec);
+        //conexiones conec = new conexiones();
+        //String elec =conec.leerOpcionConexionDesdeArchivo();
+        /*System.out.println(elec);
         if(elec.equals("local")){
             Boolean chan = conec.verificarConexionLocal();
             if(chan == false){
                 JOptionPane.showMessageDialog(null, "Base local no disponible, cambiando a servidor");
                 conec.cambiarServidor();
             }
-        }
+        }*/
         
         SwingUtilities.invokeLater(new Runnable() {
             @Override

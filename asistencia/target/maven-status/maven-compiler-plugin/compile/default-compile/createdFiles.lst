@@ -1,6 +1,3 @@
-Datos\AlumnoDAO.class
-Datos\LoginDAO.class
-Datos\conexiones.class
 Formulario\menuunitario$14.class
 Formulario\menuunitario$2.class
 Formulario\menuunitario$6.class
@@ -23,7 +20,6 @@ Formulario\login$4.class
 Formulario\login.class
 Formulario\menuunitario$13.class
 Formulario\login$7.class
-Datos\AsistenciaDAO.class
 Formulario\menuunitario$8.class
 Formulario\menuunitario$16.class
 Entidad\Login.class
@@ -31,7 +27,6 @@ Formulario\menuunitario$10.class
 Entidad\Telefono.class
 Formulario\login$3.class
 Formulario\menuunitario$17.class
-Datos\TelefonoDAO.class
 Formulario\menuunitario$7.class
 Formulario\menuunitario$1.class
 Formulario\login$6.class

@@ -3,7 +3,6 @@ package Formulario;
 import java.awt.Color;
 import java.awt.Image;
 import java.awt.Toolkit;
-import Datos.LoginDAO;
 import Entidad.Login;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
@@ -278,17 +277,15 @@ public class login extends javax.swing.JFrame {
         //javax.swing.JOptionPane.showMessageDialog(this, "Intento de login con los datos:\nUsuario: " + userTxt.getText() + "\nContraseña: " + String.valueOf(passTxt.getPassword()), "LOGIN", javax.swing.JOptionPane.INFORMATION_MESSAGE);
         String usuario = userTxt.getText();
         String contrasenaIngresada = String.valueOf(passTxt.getPassword());
-        LoginDAO dao = new LoginDAO();
-        Login sesion = dao.buscarUsuario(usuario);
-
+        //Login sesion = dao.buscarUsuario(usuario);
+        String sesion = "Admin";
+        String passAlmacenada = "Admin";
         if (sesion != null) {
-            String passAlmacenada = sesion.getContra();
 
             if (contrasenaIngresada.equals(passAlmacenada)) {
                 // Contraseña correcta, sesión exitosa
                 javax.swing.JOptionPane.showMessageDialog(this, "Sesión exitosa", "LOGIN", javax.swing.JOptionPane.INFORMATION_MESSAGE, iconoPersonalizado);
-                int archivoid = sesion.getId_admini();
-                escribirNumSesion(archivoid);
+
 
                
                 menuunitario frame = new menuunitario();
@@ -341,13 +338,13 @@ public class login extends javax.swing.JFrame {
         });
     }
 
-    private void escribirNumSesion(int id) {
+    /*private void escribirNumSesion(int id) {
         try (BufferedWriter bw = new BufferedWriter(new FileWriter(ARCHIVO_SESION))) {
             bw.write(String.valueOf(id));  // Convertir entero a cadena antes de escribir
         } catch (IOException e) {
             e.printStackTrace(); // Manejo adecuado de excepciones
         }
-    }
+    }*/
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel bg;
     private javax.swing.JLabel citybg;
