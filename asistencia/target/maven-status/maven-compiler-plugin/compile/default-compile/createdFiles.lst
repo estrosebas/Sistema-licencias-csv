@@ -2,12 +2,11 @@ Formulario\menuunitario$14.class
 Formulario\menuunitario$2.class
 Formulario\menuunitario$6.class
 com\develop\licencias\Main.class
-Formulario\menuunitario$18.class
-Entidad\Alumno.class
 Formulario\menuunitario$11.class
 Formulario\menuunitario$5.class
 Formulario\login$2.class
 Formulario\menuunitario$15.class
+Entidad\Establecimiento.class
 Formulario\login$5.class
 Formulario\menuunitario$3.class
 Formulario\login$1.class
@@ -15,7 +14,6 @@ Formulario\menuunitario$12.class
 Formulario\menuunitario$9.class
 Formulario\menuunitario.class
 com\develop\licencias\Main$1.class
-Entidad\Persona.class
 Formulario\login$4.class
 Formulario\login.class
 Formulario\menuunitario$13.class
@@ -24,11 +22,9 @@ Formulario\menuunitario$8.class
 Formulario\menuunitario$16.class
 Entidad\Login.class
 Formulario\menuunitario$10.class
-Entidad\Telefono.class
 Formulario\login$3.class
 Formulario\menuunitario$17.class
 Formulario\menuunitario$7.class
 Formulario\menuunitario$1.class
 Formulario\login$6.class
 Formulario\menuunitario$4.class
-Entidad\Asistencia.class
