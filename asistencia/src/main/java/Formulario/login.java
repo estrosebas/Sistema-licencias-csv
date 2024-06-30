@@ -288,7 +288,7 @@ public class login extends javax.swing.JFrame {
 
 
                
-                menuunitario frame = new menuunitario();
+                MenuPrincipal frame = new MenuPrincipal();
                 frame.setVisible(true);
                 this.setVisible(false);
 
@@ -327,6 +327,8 @@ public class login extends javax.swing.JFrame {
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(login.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
 

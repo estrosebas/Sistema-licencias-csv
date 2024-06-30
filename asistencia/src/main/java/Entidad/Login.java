@@ -13,21 +13,14 @@ public class Login {
     private String contra;
     private int id_admini;
     private String nombre;
-    public Login(String id_Usuario, String contra, int id_admini) {
-        this.id_Usuario = id_Usuario;
-        this.contra = contra;
-        this.id_admini = id_admini;
-    }
 
-    public Login(String id_Usuario, String contra) {
-        this.id_Usuario = id_Usuario;
+    public Login(String nombre, String contra) {
         this.contra = contra;
-    }
-
-    public Login(int id_admini, String nombre) {
-        this.id_admini = id_admini;
         this.nombre = nombre;
     }
+    
+    
+    
     
     public String getNombre() {
         return nombre;

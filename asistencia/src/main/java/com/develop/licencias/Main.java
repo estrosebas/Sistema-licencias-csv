@@ -19,16 +19,6 @@ import javax.swing.SwingUtilities;
 public class Main {
 
     public static void main(String[] args) {
-        //conexiones conec = new conexiones();
-        //String elec =conec.leerOpcionConexionDesdeArchivo();
-        /*System.out.println(elec);
-        if(elec.equals("local")){
-            Boolean chan = conec.verificarConexionLocal();
-            if(chan == false){
-                JOptionPane.showMessageDialog(null, "Base local no disponible, cambiando a servidor");
-                conec.cambiarServidor();
-            }
-        }*/
         
         SwingUtilities.invokeLater(new Runnable() {
             @Override
@@ -36,17 +26,7 @@ public class Main {
                 iniciarInterfazGrafica();
             }
         });
-         
-/*
- int idAlumno = 1; // Reemplaza con el valor adecuado
-        Date fechaHora = new Date(System.currentTimeMillis()); // Puedes ajustar esto según la fecha que desees
-        Boolean llegadaTemprano = true; // Reemplaza con el valor adecuado
 
-// Crear una instancia de Asistencia utilizando el constructor
-        Asistencia nuevaAsistencia = new Asistencia(idAlumno, fechaHora, llegadaTemprano);
-        AsistenciaDAO control = new AsistenciaDAO();
-        control.obtenerAsistenciaPorDNI(72084190);
-         *//*consulta asitencia*/
     }
 
     private static void iniciarInterfazGrafica() {
