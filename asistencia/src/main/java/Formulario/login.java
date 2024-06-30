@@ -4,6 +4,10 @@ import java.awt.Color;
 import java.awt.Image;
 import java.awt.Toolkit;
 import Entidad.Login;
+import ListaGenerica.ListaEnlazadaImpl;
+import ListaGenerica.Nodo;
+import TAD_LoginCola.CargadorLogin;
+import TAD_LoginCola.ColaImplLogin;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -277,8 +281,31 @@ public class login extends javax.swing.JFrame {
         //javax.swing.JOptionPane.showMessageDialog(this, "Intento de login con los datos:\nUsuario: " + userTxt.getText() + "\nContraseña: " + String.valueOf(passTxt.getPassword()), "LOGIN", javax.swing.JOptionPane.INFORMATION_MESSAGE);
         String usuario = userTxt.getText();
         String contrasenaIngresada = String.valueOf(passTxt.getPassword());
-        //Login sesion = dao.buscarUsuario(usuario);
-        String sesion = "Admin";
+        ListaEnlazadaImpl lista = new ListaEnlazadaImpl();
+        CargadorLogin cargador = new CargadorLogin(lista);
+        cargador.cargarDesdeCSV("usuarios.csv");
+
+        ColaImplLogin cola = new ColaImplLogin();
+        Nodo<Login> actual = lista.cabeza;
+        while (actual != null) {
+            cola.encolar(actual.getData());
+            actual = actual.getSiguiente();
+        }
+        // Intentar autenticar al usuario
+        Login usuarioAutenticado = cola.autenticar(usuario, contrasenaIngresada);
+
+        if (usuarioAutenticado != null) {
+            javax.swing.JOptionPane.showMessageDialog(this, "Sesión exitosa para: " + usuarioAutenticado.getNombre(), "LOGIN", javax.swing.JOptionPane.INFORMATION_MESSAGE, iconoPersonalizado);
+
+            MenuPrincipal frame = new MenuPrincipal();
+            frame.setVisible(true);
+            this.setVisible(false);
+        } else {
+            javax.swing.JOptionPane.showMessageDialog(this, "Usuario no encontrado o contraseña incorrecta", "LOGIN", javax.swing.JOptionPane.ERROR_MESSAGE, iconoPersonalizadoAlerta);
+        }
+
+//Login sesion = dao.buscarUsuario(usuario);
+        /*String sesion = "Admin";
         String passAlmacenada = "Admin";
         if (sesion != null) {
 
@@ -299,7 +326,8 @@ public class login extends javax.swing.JFrame {
         } else {
             // Usuario no encontrado
             javax.swing.JOptionPane.showMessageDialog(this, "Usuario no encontrado", "LOGIN", javax.swing.JOptionPane.ERROR_MESSAGE, iconoPersonalizadoAlerta);
-        }
+        }*/
+
     }//GEN-LAST:event_loginBtnTxtMouseClicked
 
     /**

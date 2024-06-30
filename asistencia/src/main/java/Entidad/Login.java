@@ -59,5 +59,10 @@ public class Login {
     public void setContra(String contra) {
         this.contra = contra;
     }
+
+    @Override
+    public String toString() {
+       return "Login{" + "nombre=" + nombre + ", contra=" + contra + '}';
+    }
     
 }
