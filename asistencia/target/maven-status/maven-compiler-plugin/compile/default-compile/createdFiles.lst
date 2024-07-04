@@ -1,7 +1,6 @@
 TAD_Establecimiento\CargadorEstablecimientosInterface.class
 Formulario\menuunitario$2.class
 TAD_Establecimiento\BusquedaImplEstablecimiento.class
-TAD_QuickSort\OrdenarListaImpl.class
 com\develop\licencias\Main.class
 ListaGenerica\MergeSort.class
 Formulario\BusquedaLicencias$11.class
@@ -9,7 +8,6 @@ Formulario\NuevaLicenciaa$2.class
 Formulario\menuunitario$5.class
 Formulario\BusquedaLicencias$14.class
 Formulario\menuunitario$15.class
-ColaGenerica\ColaImpl.class
 Entidad\Establecimiento.class
 Formulario\BusquedaLicencias$8.class
 ListaGenerica\Nodo.class
@@ -23,8 +21,6 @@ ListaGenerica\BusquedaBinariaImpl.class
 Formulario\MenuPrincipal.class
 Formulario\login.class
 TAD_Establecimiento\NodoEstablecimiento.class
-TAD_QuickSort\OrdenarListaInterface.class
-ColaGenerica\ColaInterface.class
 Formulario\BusquedaLicencias$12.class
 Formulario\menuunitario$13.class
 Formulario\login$7.class
@@ -47,7 +43,6 @@ Formulario\MenuPrincipal$3.class
 TAD_Establecimiento\BusquedaImplLinealEstablecimiento.class
 Formulario\login$5.class
 Formulario\menuunitario$3.class
-TAD_QuickSort\MainPrueba.class
 Formulario\MenuPrincipal$5.class
 TAD_LoginCola\test.class
 Formulario\BusquedaLicencias$10.class
