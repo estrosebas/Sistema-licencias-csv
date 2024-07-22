@@ -141,9 +141,9 @@ public class MenuPrincipal extends javax.swing.JFrame {
     }//GEN-LAST:event_btnSalirActionPerformed
 
     private void btnEstadisticaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEstadisticaActionPerformed
-/*        Estadistica estadis = new Estadistica();
-        estadis.setVisible(true);
-        dispose();*/
+        Estadisticas frame = new Estadisticas();
+        frame.setVisible(true);
+        this.setVisible(false);
     }//GEN-LAST:event_btnEstadisticaActionPerformed
 
     private void btnBuscarlicenciaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBuscarlicenciaActionPerformed
